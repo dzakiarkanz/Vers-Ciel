@@ -1,0 +1,4 @@
+{
+    "window.zoomLevel": 1, // Adjusts the zoom level of the entire editor window
+    "editor.fontSize": 11  // Sets the font size for the editor
+}
