@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
@@ -26,20 +27,20 @@
 </head>
 <body class="font-poppins bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-3">
-                    <div class="bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
+                    <div class="bg-white p-3 rounded-full shadow-lg">
                         <img src="foto/versciel_logo.jpeg" alt="Vers Ciel Logo" class="h-12 w-12 object-contain">
                     </div>
                     <span class="font-bold text-gray-800 text-2xl tracking-wide">Vers Ciel</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="py-4 px-4 text-primary border-b-4 border-primary font-medium">Home</a>
-                    <a href="#about" class="py-4 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">About</a>
-                    <a href="#products" class="py-4 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">Products</a>
-                    <a href="#contact" class="py-4 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">Contact</a>
+                    <a href="#" class="py-2 px-4 text-primary border-b-4 border-primary font-medium">Home</a>
+                    <a href="#about" class="py-2 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">About</a>
+                    <a href="#products" class="py-2 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">Products</a>
+                    <a href="#contact" class="py-2 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
@@ -47,7 +48,7 @@
                     </button>
                 </div>
             </div>
-            <div class="mobile-menu md:hidden flex flex-col space-y-2 mt-4">
+            <div class="mobile-menu hidden md:hidden flex flex-col space-y-2 mt-4">
                 <a href="#" class="py-2 px-4 text-primary border-l-4 border-primary font-medium">Home</a>
                 <a href="#about" class="py-2 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">About</a>
                 <a href="#products" class="py-2 px-4 text-gray-500 font-medium hover:text-primary transition duration-300">Products</a>
@@ -57,7 +58,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
+    <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20" data-aos="fade-up">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Elevate Your Style</h1>
             <p class="text-xl md:text-2xl mb-12">Premium quality hoodies for your personal brand</p>
@@ -66,12 +67,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-20 bg-white" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Vers Ciel</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0">
-                    <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="About Vers Ciel" class="rounded-lg shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="About Vers Ciel" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="md:w-1/2 md:pl-12">
                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Story</h3>
@@ -84,13 +85,13 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="py-20 bg-gray-50">
+    <section id="products" class="py-20 bg-gray-50" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Collection</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Product 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 1" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 1" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Classic Black</h3>
                         <p class="text-gray-600 mb-4">Our signature hoodie in timeless black</p>
@@ -102,8 +103,8 @@
                 </div>
                 
                 <!-- Product 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 2" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 2" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Ocean Blue</h3>
                         <p class="text-gray-600 mb-4">Vibrant blue hoodie for standout style</p>
@@ -115,8 +116,8 @@
                 </div>
                 
                 <!-- Product 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 3" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hoodie 3" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Charcoal Grey</h3>
                         <p class="text-gray-600 mb-4">Sophisticated grey for everyday wear</p>
@@ -131,7 +132,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-white" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Get In Touch</h2>
             <div class="max-w-2xl mx-auto">
@@ -214,6 +215,12 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
+
